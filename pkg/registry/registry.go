@@ -1,6 +1,6 @@
 package registry
 
-import "github.com/riwn/home_discord_buzybot/pkg/setting"
+import "github.com/riwn/home_buzybot/pkg/setting"
 
 type Registry struct {
 	// TODO: Add Service

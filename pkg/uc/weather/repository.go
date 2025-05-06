@@ -1,6 +1,6 @@
 package weather
 
-import "github.com/riwn/home_discord_buzybot/pkg/domain/model/weather"
+import "github.com/riwn/home_buzybot/pkg/domain/model/weather"
 
 type Weather interface {
 	FetchWeather() (weather.Weather, error)

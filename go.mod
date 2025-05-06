@@ -1,4 +1,4 @@
-module github.com/riwn/home_discord_buzybot
+module github.com/riwn/home_buzybot
 
 go 1.24.2
 

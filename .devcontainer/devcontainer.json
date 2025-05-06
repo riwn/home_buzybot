@@ -1,5 +1,5 @@
 {
-  "name": "Home Discord BuzyBox",
+  "name": "Home BuzyBox",
   "image": "mcr.microsoft.com/devcontainers/base",
   "features": {
     "ghcr.io/devcontainers/features/go:1": {

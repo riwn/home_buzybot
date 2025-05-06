@@ -1,9 +1,9 @@
 package registry
 
 import (
-	"github.com/riwn/home_discord_buzybot/pkg/infra/discord"
-	"github.com/riwn/home_discord_buzybot/pkg/infra/weather"
-	"github.com/riwn/home_discord_buzybot/pkg/setting"
+	"github.com/riwn/home_buzybot/pkg/infra/discord"
+	"github.com/riwn/home_buzybot/pkg/infra/weather"
+	"github.com/riwn/home_buzybot/pkg/setting"
 )
 
 type Repository struct {

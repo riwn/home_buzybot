@@ -1,3 +1,3 @@
-# HOME DISCORD BUZYBOT
+# HOME BUZYBOT
 
-Discordサーバーに諸々通知するために雑多なことをするbotです。
+自宅で利用する用の雑多なことをするbotです。

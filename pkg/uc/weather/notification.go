@@ -1,6 +1,6 @@
 package weather
 
-import "github.com/riwn/home_discord_buzybot/pkg/registry"
+import "github.com/riwn/home_buzybot/pkg/registry"
 
 type WeatherNotification struct {
 	weather Weather

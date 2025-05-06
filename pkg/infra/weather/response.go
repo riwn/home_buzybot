@@ -1,7 +1,7 @@
 package weather
 
 import (
-	"github.com/riwn/home_discord_buzybot/pkg/domain/model/weather"
+	"github.com/riwn/home_buzybot/pkg/domain/model/weather"
 )
 
 type WeatherResponse struct {
