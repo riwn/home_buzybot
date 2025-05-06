@@ -3,6 +3,7 @@ package setting
 import (
 	"bytes"
 	"embed"
+	"fmt"
 	"html/template"
 	"path/filepath"
 
@@ -22,6 +23,14 @@ type Config struct {
 	} `yaml:"discord"`
 }
 
+func (c Config) String() string {
+	return "OpenWeather URL: " + c.OpenWeather.URL + "\n" +
+		"OpenWeather API Key: " + c.OpenWeather.APIKey + "\n" +
+		"OpenWeather Latitude: " + c.OpenWeather.Latitude + "\n" +
+		"OpenWeather Longitude: " + c.OpenWeather.Longitude + "\n" +
+		"Discord Webhook URL: " + c.Discord.WebhookURL
+}
+
 //go:embed config.yaml
 var file embed.FS
 
@@ -33,6 +42,8 @@ func init() {
 		panic("設定ファイルの読み込みに失敗しました: " + err.Error())
 	}
 	globalConfig = config
+
+	fmt.Println(config)
 }
 
 func Get() Config {
