@@ -1,0 +1,24 @@
+{
+  "name": "Home Discord BuzyBox",
+  "image": "mcr.microsoft.com/devcontainers/base",
+  "features": {
+    "ghcr.io/devcontainers/features/go:1": {
+      "version": "1.24"
+    }
+  },
+  "customizations": {
+    "settings": {
+      "terminal.integrated.defaultProfile.linux": "zsh"
+    },
+    "extensions": [
+      "golang.go",
+      "ms-vscode.go-tools",
+      "eamodio.gitlens",
+      "GitHub.copilot-chat",
+      "GitHub.copilot",
+      "EditorConfig.EditorConfig"
+    ]
+  },
+  "postCreateCommand": "go mod tidy && go install golang.org/x/tools/gopls@latest",
+  "onCreateCommand": "./.devcontainer/onCreate.sh"
+}
